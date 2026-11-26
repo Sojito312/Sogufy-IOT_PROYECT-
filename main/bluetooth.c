@@ -19,7 +19,7 @@
 #include "freertos/task.h"
 #include "pantalla.h"
 
-#define DEVICE_NAME "FIAD-Music"
+#define DEVICE_NAME "SOGUFY"
 typedef struct {
     bool connected;
     bool playing;
@@ -235,7 +235,7 @@ void app_main(void)
         bool matches = source_matches(&bt, web);
         bool playing = bt.has_status ? bt.playing : bt.audio_active;
         player_screen_t screen = {
-            .title = *bt.title ? bt.title : (bt.connected ? "Pon una canción" : "FIAD-Music"),
+            .title = *bt.title ? bt.title : (bt.connected ? "Pon una canción" : "SOGUFY"),
             .artist = *bt.artist ? bt.artist : (bt.connected ? web->status : "Empareja tu iPhone"),
             .source = matches ? "Spotify" : "BT",
             .playing = playing, .connected = bt.connected,

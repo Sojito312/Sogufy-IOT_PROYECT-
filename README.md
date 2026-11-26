@@ -1,8 +1,7 @@
-# FIAD Music para ESP32
+# SOGUFY para ESP32
 
 El ESP32 dibuja la interfaz en la ILI9341 por SPI. El iPhone envía el audio al ESP32 por Bluetooth clásico A2DP y recibe los comandos de los botones por AVRCP. El ESP32 consulta la canción actual y descarga su portada por HTTPS mediante la API de Spotify. Se usa la canción de Bluetooth para comprobar que la portada corresponde al audio. Después del alta inicial puedes alimentar el ESP32 con un cargador USB y reproducir desde el iPhone.
 
-![Vista previa del reproductor en la TFT](Vista_TFT.png)
 
 ## 1. Compilar y cargar el firmware
 
@@ -26,7 +25,7 @@ ESP-IDF descarga cJSON y Tiny JPEG Decoder en la primera compilación. Si necesi
    ```
 
 3. Introduce el Client ID, tu Wi-Fi de **2.4 GHz** y la contraseña. Autoriza el acceso en el navegador con **la misma cuenta que usará el iPhone**. Espera el mensaje **Configuración guardada**. La contraseña de Wi-Fi y el refresh token se guardan en la memoria NVS del ESP32. El script usa OAuth PKCE y mantiene las credenciales en memoria durante el alta.
-4. En el iPhone abre **Configuración → Bluetooth** y conecta **FIAD-Music**. En Spotify pon una canción y selecciona **FIAD-Music** como salida de audio si iOS te pide elegir. Tras mostrar la portada y comprobar el AUX, conecta la placa al cargador USB para probar el modo autónomo.
+4. En el iPhone abre **Configuración → Bluetooth** y conecta **SOGUFY**. En Spotify pon una canción y selecciona **SOGUFY** como salida de audio si iOS te pide elegir. Tras mostrar la portada y comprobar el AUX, conecta la placa al cargador USB para probar el modo autónomo.
 
 ## Conexiones
 

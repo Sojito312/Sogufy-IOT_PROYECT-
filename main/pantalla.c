@@ -249,7 +249,7 @@ void pantalla_dibujar(const player_screen_t *s, bool completa)
             line = pixels[i];
             box(0, row, WIDTH, 1, BACK);
             if (row < FIRST_CONTROL_ROW) {
-                text_at(16, 10, 1, 10, "FIAD MUSIC", TEXT);
+                text_at(16, 10, 1, 10, "SOGUFY", TEXT);
                 disk(151, 18, 2, s->connected ? GREEN : MUTED, false);
                 text_at(158, 10, 1, 8, s->source, MUTED);
                 box(16, 32, 208, 1, BORDER);

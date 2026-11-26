@@ -109,7 +109,7 @@ def send_config(port, config):
         while monotonic() < deadline:
             answer = link.readline().strip()
             if answer == b"FIAD_CONFIG_OK":
-                print("Configuración guardada. Empareja el iPhone con FIAD-Music.")
+                print("Configuración guardada. Empareja el iPhone con SOGUFY.")
                 return
             if answer == b"FIAD_CONFIG_ERROR":
                 raise ValueError("El ESP32 rechazó la configuración. Revisa la longitud de los datos.")

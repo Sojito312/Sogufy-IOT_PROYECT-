@@ -13,7 +13,7 @@ if ((Resolve-Path -LiteralPath $PSScriptRoot).Path -eq $Proyecto) {
     throw "Extrae primero el ZIP en una carpeta aparte."
 }
 if (Test-Path -LiteralPath (Join-Path $main "spotify.c")) {
-    throw "FIAD Music ya está instalado en main."
+    throw "SOGUFY ya está instalado en main."
 }
 $archivos = @("sdkconfig.fiad.defaults", "configurar_fiad.py", "LEEME_FIAD.md")
 foreach ($archivo in $archivos) {
